@@ -8,7 +8,7 @@ end
 
 def getInt()
   input = askInput()
-  while (Integer(input) === false && input <= 0 ) do
+  while (Integer(input) === false || input <= 0 ) do
     puts "Needs a positiv integer !"
     input = askInput()
   end
